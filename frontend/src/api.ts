@@ -1,5 +1,5 @@
 import type { AdminLogin, CreateOrder, ParcelOrder, Status } from './types'
-const API = import.meta.env.VITE_API_URL ?? 'http://localhost:5000'
+const API = import.meta.env.VITE_API_URL ?? 'http://localhost:5169'
 async function request<T>(path: string, options: RequestInit = {}, token?: string): Promise<T> {
   const headers = new Headers(options.headers)
   if (options.body) headers.set('Content-Type', 'application/json')
