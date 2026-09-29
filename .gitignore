@@ -1,0 +1,14 @@
+# .NET
+**/bin/
+**/obj/
+.vs/
+
+# Node
+**/node_modules/
+**/dist/
+
+# Local data and secrets
+backend/ParcelTracking.Api/data/
+.env
+.env.*
+!.env.example
